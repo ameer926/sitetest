@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NOVA — Modern Essentials Store</title>
+    <meta
+      name="description"
+      content="NOVA is a modern e-commerce store template featuring curated everyday essentials, electronics and lifestyle products."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <!-- ===================== HEADER ===================== -->
+    <header class="site-header">
+      <div class="container header-inner">
+        <a href="index.html" class="brand" aria-label="NOVA home">
+          <span class="brand-mark">N</span>
+          NOVA
+        </a>
+
+        <nav class="main-nav" id="mainNav" aria-label="Primary">
+          <ul>
+            <li><a href="index.html" class="active">Shop</a></li>
+            <li><a href="#products">Categories</a></li>
+            <li><a href="#deals">Deals</a></li>
+            <li><a href="tracking.html">Track Order</a></li>
+          </ul>
+        </nav>
+
+        <div class="header-actions">
+          <button class="icon-btn" aria-label="Search">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+          </button>
+          <a href="tracking.html" class="icon-btn" aria-label="Track order">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 18H3c-.6 0-1-.4-1-1V7c0-.6.4-1 1-1h10c.6 0 1 .4 1 1v11"/><path d="M14 9h4l4 4v4c0 .6-.4 1-1 1h-2"/><circle cx="7" cy="18" r="2"/><circle cx="17" cy="18" r="2"/></svg>
+          </a>
+          <button class="icon-btn" id="cartToggle" aria-label="Open cart">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="8" cy="21" r="1"/><circle cx="19" cy="21" r="1"/><path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"/></svg>
+            <span class="cart-count" id="cartCount">0</span>
+          </button>
+          <button class="icon-btn nav-toggle" id="navToggle" aria-label="Menu" aria-expanded="false">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="4" y1="7" x2="20" y2="7"/><line x1="4" y1="12" x2="20" y2="12"/><line x1="4" y1="17" x2="20" y2="17"/></svg>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <!-- ===================== HERO ===================== -->
+      <section class="hero">
+        <div class="container hero-inner">
+          <div class="hero-text">
+            <span class="hero-eyebrow">✨ New Summer Collection 2026</span>
+            <h1>Everyday essentials, <span class="accent">elevated.</span></h1>
+            <p>
+              Discover thoughtfully designed products that blend function and
+              style. Free shipping on orders over $50 and easy 30-day returns.
+            </p>
+            <div class="hero-cta">
+              <a href="#products" class="btn btn-primary">Shop the collection</a>
+              <a href="tracking.html" class="btn btn-outline">Track your order</a>
+            </div>
+            <div class="hero-stats">
+              <div class="stat"><strong>12k+</strong><span>Happy customers</span></div>
+              <div class="stat"><strong>4.9★</strong><span>Average rating</span></div>
+              <div class="stat"><strong>48h</strong><span>Fast delivery</span></div>
+            </div>
+          </div>
+          <div class="hero-visual">
+            <div class="hero-emoji">🛍️</div>
+            <div class="floating-card fc-1">
+              <div class="fc-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
+              </div>
+              <div class="fc-text"><strong>Order confirmed</strong><span>Ships in 24 hours</span></div>
+            </div>
+            <div class="floating-card fc-2">
+              <div class="fc-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 18H3c-.6 0-1-.4-1-1V7c0-.6.4-1 1-1h10c.6 0 1 .4 1 1v11"/><path d="M14 9h4l4 4v4c0 .6-.4 1-1 1h-2"/><circle cx="7" cy="18" r="2"/><circle cx="17" cy="18" r="2"/></svg>
+              </div>
+              <div class="fc-text"><strong>Free shipping</strong><span>On orders over $50</span></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===================== FEATURE STRIP ===================== -->
+      <section class="feature-strip">
+        <div class="container">
+          <div class="feature">
+            <span class="feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 18H3c-.6 0-1-.4-1-1V7c0-.6.4-1 1-1h10c.6 0 1 .4 1 1v11"/><path d="M14 9h4l4 4v4c0 .6-.4 1-1 1h-2"/><circle cx="7" cy="18" r="2"/><circle cx="17" cy="18" r="2"/></svg></span>
+            <div><strong>Free shipping</strong><span>On orders over $50</span></div>
+          </div>
+          <div class="feature">
+            <span class="feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"/><path d="M3 3v5h5"/></svg></span>
+            <div><strong>30-day returns</strong><span>Hassle-free refunds</span></div>
+          </div>
+          <div class="feature">
+            <span class="feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></span>
+            <div><strong>Secure payment</strong><span>Encrypted checkout</span></div>
+          </div>
+          <div class="feature">
+            <span class="feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></span>
+            <div><strong>24/7 support</strong><span>Always here to help</span></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===================== PRODUCTS ===================== -->
+      <section class="section" id="products">
+        <div class="container">
+          <div class="section-head">
+            <div>
+              <h2>Featured products</h2>
+              <p>Handpicked favourites our customers love most.</p>
+            </div>
+            <div class="category-filters" id="categoryFilters">
+              <button class="chip active" data-category="all">All</button>
+              <button class="chip" data-category="Electronics">Electronics</button>
+              <button class="chip" data-category="Apparel">Apparel</button>
+              <button class="chip" data-category="Home">Home</button>
+              <button class="chip" data-category="Accessories">Accessories</button>
+            </div>
+          </div>
+
+          <div class="product-grid" id="productGrid">
+            <!-- Product cards injected by store.js -->
+          </div>
+        </div>
+      </section>
+
+      <!-- ===================== PROMO ===================== -->
+      <section class="section" id="deals" style="padding-top: 0">
+        <div class="container">
+          <div class="promo">
+            <div class="promo-text">
+              <h2>Summer Sale — up to 40% off</h2>
+              <p>
+                Refresh your essentials with our biggest sale of the season.
+                Limited stock on select items, so don't wait.
+              </p>
+            </div>
+            <a href="#products" class="btn btn-primary">Shop deals</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===================== NEWSLETTER ===================== -->
+      <section class="section" style="padding-top: 0">
+        <div class="container">
+          <div class="newsletter">
+            <h2>Get 10% off your first order</h2>
+            <p>Join our newsletter for early access to drops, deals and design stories.</p>
+            <form class="newsletter-form" id="newsletterForm">
+              <input type="email" placeholder="Enter your email" required aria-label="Email address" />
+              <button type="submit" class="btn btn-primary">Subscribe</button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- ===================== FOOTER ===================== -->
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-brand">
+            <a href="index.html" class="brand"><span class="brand-mark">N</span> NOVA</a>
+            <p>Modern essentials designed to last. Thoughtful products for everyday life.</p>
+          </div>
+          <div class="footer-col">
+            <h4>Shop</h4>
+            <a href="#products">New arrivals</a>
+            <a href="#products">Best sellers</a>
+            <a href="#deals">Sale</a>
+            <a href="#products">Gift cards</a>
+          </div>
+          <div class="footer-col">
+            <h4>Support</h4>
+            <a href="tracking.html">Track order</a>
+            <a href="#">Shipping &amp; returns</a>
+            <a href="#">FAQ</a>
+            <a href="#">Contact us</a>
+          </div>
+          <div class="footer-col">
+            <h4>Company</h4>
+            <a href="#">About</a>
+            <a href="#">Careers</a>
+            <a href="#">Privacy policy</a>
+            <a href="#">Terms of service</a>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <span>© 2026 NOVA Store. All rights reserved.</span>
+          <div class="social-links">
+            <a href="#" aria-label="Twitter"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a>
+            <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.16c3.2 0 3.58.01 4.85.07 1.17.05 1.8.25 2.23.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.42.36 1.06.41 2.23.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.25 1.8-.41 2.23-.22.56-.48.96-.9 1.38-.42.42-.82.68-1.38.9-.42.16-1.06.36-2.23.41-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.8-.25-2.23-.41a3.7 3.7 0 0 1-1.38-.9 3.7 3.7 0 0 1-.9-1.38c-.16-.42-.36-1.06-.41-2.23-.06-1.27-.07-1.65-.07-4.85s.01-3.58.07-4.85c.05-1.17.25-1.8.41-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.42-.16 1.06-.36 2.23-.41C8.42 2.17 8.8 2.16 12 2.16zm0 1.44c-3.14 0-3.51.01-4.75.07-1.15.05-1.77.24-2.18.4-.55.21-.94.47-1.35.88-.41.41-.67.8-.88 1.35-.16.41-.35 1.03-.4 2.18-.06 1.24-.07 1.61-.07 4.75s.01 3.51.07 4.75c.05 1.15.24 1.77.4 2.18.21.55.47.94.88 1.35.41.41.8.67 1.35.88.41.16 1.03.35 2.18.4 1.24.06 1.61.07 4.75.07s3.51-.01 4.75-.07c1.15-.05 1.77-.24 2.18-.4.55-.21.94-.47 1.35-.88.41-.41.67-.8.88-1.35.16-.41.35-1.03.4-2.18.06-1.24.07-1.61.07-4.75s-.01-3.51-.07-4.75c-.05-1.15-.24-1.77-.4-2.18a3.6 3.6 0 0 0-.88-1.35 3.6 3.6 0 0 0-1.35-.88c-.41-.16-1.03-.35-2.18-.4-1.24-.06-1.61-.07-4.75-.07zm0 2.45a5.95 5.95 0 1 1 0 11.9 5.95 5.95 0 0 1 0-11.9zm0 9.82a3.86 3.86 0 1 0 0-7.72 3.86 3.86 0 0 0 0 7.72zm7.58-10.06a1.39 1.39 0 1 1-2.78 0 1.39 1.39 0 0 1 2.78 0z"/></svg></a>
+            <a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.07C24 5.4 18.63 0 12 0S0 5.4 0 12.07c0 6.02 4.39 11.01 10.13 11.93v-8.44H7.08v-3.49h3.05V9.41c0-3.02 1.79-4.69 4.53-4.69 1.31 0 2.69.24 2.69.24v2.97h-1.52c-1.49 0-1.96.93-1.96 1.89v2.25h3.33l-.53 3.49h-2.8v8.44C19.61 23.08 24 18.09 24 12.07z"/></svg></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- ===================== CART DRAWER ===================== -->
+    <div class="cart-overlay" id="cartOverlay"></div>
+    <aside class="cart-drawer" id="cartDrawer" aria-label="Shopping cart" aria-hidden="true">
+      <div class="cart-header">
+        <h3>Your cart</h3>
+        <button class="cart-close" id="cartClose" aria-label="Close cart">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+        </button>
+      </div>
+      <div class="cart-items" id="cartItems"></div>
+      <div class="cart-footer" id="cartFooter" hidden>
+        <div class="cart-subtotal">
+          <span>Subtotal</span>
+          <span id="cartSubtotal">$0.00</span>
+        </div>
+        <p class="cart-note">Shipping &amp; taxes calculated at checkout.</p>
+        <button class="btn btn-primary btn-block">Checkout</button>
+      </div>
+    </aside>
+
+    <!-- ===================== TOAST ===================== -->
+    <div class="toast" id="toast">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
+      <span id="toastMsg">Added to cart</span>
+    </div>
+
+    <script src="js/store.js"></script>
+  </body>
+</html>
